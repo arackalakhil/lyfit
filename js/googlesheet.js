@@ -4,7 +4,7 @@ const form = document.forms['contact-form1']
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => alert("Thank you! we will contact you soon" ))
+  .then(response => alert("Thank you! We’ll take a closer look." ))
   .then(() => { window.location.reload(); })
   .catch(error => console.error('Error!', error.message))
 })
